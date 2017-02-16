@@ -2,9 +2,6 @@ FROM wanhongfei/java:latest
 
 MAINTAINER wwhhff11 "1272700372@qq.com"
 
-### base software
-RUN mkdir -p /home/software
-
 ### tomcat
 ADD /tomcat/apache-tomcat-8.5.11.tar.gz /home/software/
 ENV CATALINA_HOME=/home/software/apache-tomcat-8.5.11
